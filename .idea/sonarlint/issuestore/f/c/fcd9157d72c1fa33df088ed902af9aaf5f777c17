@@ -1,0 +1,11 @@
+
+X
+java:S1854"<Remove this useless assignment to local variable "isClear2".(²ûè8ºßÜæô0
+]
+java:S1854";Remove this useless assignment to local variable "isClear".(üÉÒÇşÿÿÿÿ8ºßÜæô0
+N
+java:S1481",Remove this unused "isClear" local variable.(üÉÒÇşÿÿÿÿ8»ßÜæô0
+I
+java:S1481"-Remove this unused "isClear2" local variable.(²ûè8»ßÜæô0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(“ÁØ8»ßÜæô0
+Z	java:S106	"9Replace this use of System.out or System.err by a logger.(˜­ğôıÿÿÿÿ8¼ßÜæô0

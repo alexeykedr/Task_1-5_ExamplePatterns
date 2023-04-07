@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChatGPTCopilotChannelManager">
+    <dynamicCommends>
+      <option value="explain" />
+      <option value="translate to chinese" />
+      <option value="translate to english" />
+      <option value="check bugs" />
+      <option value="optimize code" />
+    </dynamicCommends>
+    <chatChannels>
+      <chatChannel>
+        <option name="model" value="gpt-3.5-turbo" />
+        <option name="messages">
+          <Message>
+            <option name="content" value="hi" />
+            <option name="role" value="user" />
+          </Message>
+          <Message>
+            <option name="content" value="Hello! How can I assist you today?" />
+            <option name="role" value="assistant" />
+          </Message>
+          <Message>
+            <option name="content" value="перей на русский" />
+            <option name="role" value="user" />
+          </Message>
+          <Message>
+            <option name="content" value="Добрый день! Чем я могу вам помочь сегодня?" />
+            <option name="role" value="assistant" />
+          </Message>
+          <Message>
+            <option name="content" value="напиши паттерн билдер" />
+            <option name="role" value="user" />
+          </Message>
+          <Message>
+            <option name="content" value="Конечно, вот пример реализации паттерна Билдер на языке Java:&#10;&#10;```&#10;public class Product {&#10;    private String attribute1;&#10;    private String attribute2;&#10;    private String attribute3;&#10;    &#10;    public Product(String attribute1, String attribute2, String attribute3) {&#10;        this.attribute1 = attribute1;&#10;        this.attribute2 = attribute2;&#10;        this.attribute3 = attribute3;&#10;    }&#10;&#10;    public String getAttribute1() {&#10;        return attribute1;&#10;    }&#10;&#10;    public String getAttribute2() {&#10;        return attribute2;&#10;    }&#10;&#10;    public String getAttribute3() {&#10;        return attribute3;&#10;    }&#10;}&#10;&#10;public class ProductBuilder {&#10;    private String attribute1;&#10;    private String attribute2;&#10;    private String attribute3;&#10;&#10;    public ProductBuilder setAttribute1(String attribute1) {&#10;        this.attribute1 = attribute1;&#10;        return this;&#10;    }&#10;&#10;    public ProductBuilder setAttribute2(String attribute2) {&#10;        this.attribute2 = attribute2;&#10;        return this;&#10;    }&#10;&#10;    public ProductBuilder setAttribute3(String attribute3) {&#10;        this.attribute3 = attribute3;&#10;        return this;&#10;    }&#10;&#10;    public Product build() {&#10;        return new Product(attribute1, attribute2, attribute3);&#10;    }&#10;}&#10;&#10;public class Client {&#10;    public static void main(String[] args) {&#10;        Product product = new ProductBuilder()&#10;                .setAttribute1(&quot;Attribute1Value&quot;)&#10;                .setAttribute2(&quot;Attribute2Value&quot;)&#10;                .setAttribute3(&quot;Attribute3Value&quot;)&#10;                .build();&#10;    }&#10;}&#10;```&#10;&#10;В этом примере `Product` представляет собой класс продукта, у которого есть три атрибута (`attribute1`, `attribute2` и `attribute3`). Класс `ProductBuilder` содержит методы для установки значений атрибутов продукта, а метод `build()` возвращает готовый объект `Product`. &#10;&#10;Класс `Client` использует `ProductBuilder`, чтобы создать объект `Product` с определенными значениями атрибутов. Обратите внимание на методы `setAttributeX()`, которые могут вызываться цепочкой и возвращают объект `ProductBuilder`, в результате чего можно использовать методы по цепочке для установки значений для всех атрибутов." />
+            <option name="role" value="assistant" />
+          </Message>
+          <Message>
+            <option name="content" value="stop" />
+            <option name="role" value="user" />
+          </Message>
+          <Message>
+            <option name="content" value="Хорошо, если у вас будут дополнительные вопросы, не стесняйтесь обращаться!" />
+            <option name="role" value="assistant" />
+          </Message>
+        </option>
+      </chatChannel>
+    </chatChannels>
+  </component>
+</project>
